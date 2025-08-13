@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subFlow name="SimpleFlow_subflow" uuid="abcdef12-3456-7890-abcd-ef1234567890" schemaVersion="1.0">
+    <description>Dummy subflow for SampleApp</description>
+</subFlow>
