@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messageFlow name="SimpleFlow" uuid="12345678-1234-1234-1234-123456789abc" schemaVersion="1.0">
+    <description>Simple HTTP Echo Flow</description>
+    <inputNode name="HTTP Input" type="com.ibm.broker.http.HTTPInputNode">
+        <property name="path">/test</property>
+        <property name="messageDomain">XMLNSC</property>
+    </inputNode>
+    <computeNode name="Compute" type="com.ibm.broker.plugin.MbComputeNode">
+        <property name="computeExpression">
+            <![CDATA[
+                SET OutputRoot = InputRoot;
+            ]]>
+        </property>
+    </computeNode>
+    <outputNode name="HTTP Reply" type="com.ibm.broker.http.HTTPReplyNode"/>
+</messageFlow>
