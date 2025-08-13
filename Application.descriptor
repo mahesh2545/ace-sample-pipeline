@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application name="SampleApp" type="application" schemaVersion="1.0">
+    <description>Sample ACE Application for Jenkins pipeline demo</description>
+</application>
